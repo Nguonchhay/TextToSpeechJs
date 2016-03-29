@@ -1,0 +1,16 @@
+<htnml>
+	<head>
+		<script src="responsivevoice.js"></script>
+	</head>
+	<body>
+		<!-- More info: http://responsivevoice.org/api/ -->
+		Enter text:<textarea id="text"></textarea>
+		<button onclick="speech()">Speech</button>
+		<script>
+			function speech() {
+				var text = document.getElementById("text");
+				responsiveVoice.speak(text.value, "UK English Male", {volume: 1});
+			}
+		</script>
+	</body>
+</html>
